@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack .",
     "build-dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build-to-server": "npm run build && mv ./dist/* ~/var/www/html/"
   },
   "keywords": [
     "over",
