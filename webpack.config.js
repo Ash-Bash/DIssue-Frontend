@@ -10,7 +10,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 const miniCssPlugin = new MiniCssExtractPlugin({
     // Options similar to the same options in webpackOptions.output
     // both options are optional
-    filename: "dissue.main.css",
+    filename: "dissue.min.css",
     publicPath: "/dist"
 });
 

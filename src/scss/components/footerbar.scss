@@ -1,0 +1,36 @@
+footer {
+    &#footerBar {
+        background-color: #282828;
+        text-align: center;
+        vertical-align: middle;
+
+        #footerDevLabel {
+            padding: 4px 0px;
+        }
+
+        #footerNavLinksList {
+            margin-top: -10px;
+            margin-right: 10px;
+            height: 100% !important;
+            li {
+                height: 48px !important;
+                a {
+                    display: inline-block;
+                    height: calc(58px - 38px) !important;
+                    text-align: center;
+                    vertical-align: middle;
+                    &#link {
+                        height: calc(100% - 36px);
+                        padding: 14px 10px;
+                        color: lightgray;
+                    }
+                }
+
+                a:hover {
+                    background-color: #999999;
+                    color: #282828;
+                }
+            }
+        }
+    }
+}
