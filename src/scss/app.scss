@@ -1,10 +1,12 @@
 // Libs Styles
 
 // Global Style Variables
+@import "./globals/mixins.scss";
 @import "./globals/variables.scss";
 @import "./globals/general.scss";
 
 // Custom Conponents
 @import "./components/lists.scss";
 @import "./components/navbar.scss";
+@import "./components//navbaritem.scss";
 @import "./components/footerbar.scss";

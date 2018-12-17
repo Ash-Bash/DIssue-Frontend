@@ -3,6 +3,29 @@ nav {
         display: inline-block;
         height: 48px;
         background-color: whitesmoke;
-        border-bottom: 1px solid #282828
+        border-bottom: 1px solid #727272;
+        #navBarContent {
+            width: 100%;
+
+            #webIconImg {
+                vertical-align: middle;
+                margin-bottom: 4px;
+                margin-left: 20px;
+                height: 22px;
+            }
+        }
+
+        ul {
+            &#navBarItemList {
+                margin-left: 20px;
+                height: 48px;
+            }
+
+            &#navBarActionItemList {
+                vertical-align: middle;
+                margin-top: 5px;
+                margin-right: 15px;
+            }
+        }
     }
 }

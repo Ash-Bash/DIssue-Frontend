@@ -1,0 +1,57 @@
+li {
+    &#navBarItem {
+        height: 48px !important;
+        min-width: 64px !important;
+        a {
+            &#link {
+                display: inline-block;
+                height: calc(58px - 38px) !important;
+                min-width: 48px !important;
+                text-align: center;
+                vertical-align: middle;
+                padding: 14px 10px;
+                color: #282828;
+
+                &:hover {
+                    background-color: #999999;
+                    color: #282828;
+                }
+
+                &.selected {
+                    height: 48px !important;
+                }
+            }
+
+        }
+    }
+
+    &#navBarActionItem {
+        vertical-align: middle;
+        height: 48px !important;
+        min-width: 64px !important;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        a {
+            &#link {
+                display: inline-block;
+                height: calc(32px - 20px) !important;
+                min-width: 48px !important;
+                text-align: center;
+                vertical-align: middle;
+                padding: 10px 10px;
+                padding-bottom: 14px;
+                color: #282828;
+                border-radius: 2px;
+                min-width: 64px !important;
+
+                &.selected {
+                    height: 48px !important;
+                }
+            }
+
+        }
+    }
+}

@@ -1,8 +1,22 @@
 
-body {
+html, body {
+    height: 100%;
     padding: 0;
     margin: 0;
+}
+
+body, #app, #app div:first-child {
+    min-height: 100%;
+    
+}
+
+#mainDiv {
+    position: static;
+}
+
+body {
     color: $primary-color;
+    font-family: Arial;
 }
 
 div, footer, nav {
@@ -14,6 +28,7 @@ nav, footer {
 }
 
 footer {
+    position: absolute;
     height: 48px;
     bottom: 0;
 }
@@ -45,7 +60,6 @@ ul {
 }
 
 #contentWrapper {
-    position: absolute;
     left: 0;
     right: 0;
     margin: 0px auto;
@@ -68,4 +82,29 @@ ul {
     position: absolute;
     float: right;
     right: 0;
+}
+
+.selected {
+    border-bottom: 4px solid orange;
+    box-sizing: border-box;
+}
+
+.signIn-Action {
+    background-color: rgb(0, 89, 255);
+    border: 1px solid blue; 
+    color: white !important;
+    
+    &:hover {
+        background-color: blue;
+    }
+}
+
+.signUp-Action {
+    background-color: orange;
+    border: 1px solid darkorange;
+    color: white !important;
+
+    &:hover {
+        background-color: darkorange;
+    }
 }

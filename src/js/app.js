@@ -8,7 +8,7 @@ import FooterBar from "./components/footerbar";
 class App extends React.Component {
 
     render() {
-        return <div>
+        return <div id="mainDiv">
             <NavBar />
             <h1>Hello, World!</h1>
             <FooterBar />

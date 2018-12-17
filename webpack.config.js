@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const devMode = process.env.NODE_ENV !== 'production'
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -13,6 +14,10 @@ const miniCssPlugin = new MiniCssExtractPlugin({
     filename: "dissue.min.css",
     publicPath: "/dist"
 });
+
+const copyFilesPlugin = new CopyWebpackPlugin([
+    { from: __dirname + '/src/assets/**/*', force: true }
+  ])
 
 module.exports = {
     context: __dirname + "/src",
@@ -37,10 +42,14 @@ module.exports = {
                     { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
                     { loader: 'sass-loader', options: { sourceMap: true } },
                 ],
-              }
+            }/*,
+            { 
+                test: /.(png|woff(2)?|eot|ttf|svg)(?[a-z0-9=.]+)?$/,
+                loader: 'url-loader?limit=100000' 
+            }*/
         ]
     },
-    plugins: [htmlPlugin, miniCssPlugin],
+    plugins: [htmlPlugin, miniCssPlugin, copyFilesPlugin],
     devServer: {  // configuration for webpack-dev-server
       contentBase: './src/html',  //source of static assets
       port: 8082, // port to run dev-server
