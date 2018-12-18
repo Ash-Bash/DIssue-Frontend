@@ -1,0 +1,38 @@
+.container {
+    &.date-User {
+        float: right;
+
+        .date-label, .user-link {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .date-label {
+            color: rgb(170, 170, 170);
+            margin-right: 5px;
+        }
+
+        .user-link {
+            text-decoration: none;
+        }
+    }
+
+    &.c-tag {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    &.c-sidebarTag {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        label { margin-bottom: 10px }
+
+        .tag {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

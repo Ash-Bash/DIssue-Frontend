@@ -1,0 +1,55 @@
+div.splitView {
+
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+
+    .leftPanel {
+        float: left;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .rightPanel {
+        float: right;
+        
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .leftPanel, .rightPanel {
+        box-sizing: border-box;
+    }
+
+    #trendingRightPanel { 
+        border-left: 1px solid lightgrey;
+    }
+
+    .sv-5 { width: 5%; }
+    .sv-10 { width: 10%; }
+    .sv-15 { width: 15%; }
+    .sv-20 { width: 20%; }
+    .sv-25 { width: 25%; }
+    .sv-30 { width: 30%; }
+    .sv-35 { width: 35%; }
+    .sv-40 { width: 40%; }
+    .sv-45 { width: 45%; }
+    .sv-50 { width: 50%; }
+    .sv-55 { width: 55%; }
+    .sv-60 { width: 60%; }
+    .sv-65 { width: 65%; }
+    .sv-70 { width: 70%; }
+    .sv-75 { width: 75%; }
+    .sv-80 { width: 80%; }
+    .sv-85 { width: 85%; }
+    .sv-90 { width: 90%; }
+    .sv-95 { width: 95%; }
+    .sv-100 { width: 100%; }
+    .sv-auto { width: auto; }
+
+    #cellSplitView {
+        #cellLeftPanel, #cellRightPanel {
+            height: 100%;
+        }
+    }
+}

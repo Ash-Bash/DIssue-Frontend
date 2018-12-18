@@ -1,0 +1,18 @@
+.tag {
+    &.cell {
+        background-color: rgb(194, 231, 253);
+        border-radius: 3px;
+        padding: 4px;
+        font-size: 12px;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    &.standard {
+        width: 100%;
+        display: block;
+    }
+}

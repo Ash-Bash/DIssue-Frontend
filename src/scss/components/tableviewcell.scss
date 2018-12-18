@@ -1,0 +1,34 @@
+.tableViewCell {
+
+    border-bottom: 1px solid lightgray;
+    display: flex;
+
+    #linkArea {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: inline-flex;
+    }
+
+    #cellLeftPanel {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+
+        .badge {
+            margin-top: 10px;
+            width: 25%;
+        }
+    }
+
+    #cellRightPanel {
+        padding: 5px;
+
+        #titleLink {
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    }
+}
