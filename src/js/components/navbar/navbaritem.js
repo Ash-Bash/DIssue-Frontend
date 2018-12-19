@@ -15,6 +15,10 @@ function loadURL(index) {
 
 export default class NavBarItem extends React.Component {
 
+    changePage(index) {
+        window.history.pushState({ path: loadURL(index) }, '', loadURL(index));
+    }
+
     render() {
         return <li id="navBarItem">
             <a id="link" className={'unstyled-link ' + this.props.selected } href={loadURL(this.props.index)}>{this.props.title}</a>

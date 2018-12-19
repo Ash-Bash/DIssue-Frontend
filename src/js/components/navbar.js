@@ -47,8 +47,13 @@ export default class NavBar extends React.Component {
                         <NavBarItem title="Promoted" index="3" selected={promotedItemSelected} />
                     </ul>
                     <ul id="navBarActionItemList" className="list-unstyled inline-list right">
-                        <NavBarActionItem title="Login" actionStyle="signIn-Action" />
-                        <NavBarActionItem title="Sign Up" actionStyle="signUp-Action" />
+                        <div id="newUserActionsSection" className="vis-show">
+                            <NavBarActionItem title="Login" actionStyle="signIn-Action" />
+                            <NavBarActionItem title="Sign Up" actionStyle="signUp-Action" />
+                        </div>
+                        <div id="existingUserActionsSection" className="vis-hide">
+
+                        </div>
                     </ul>
                 </div>
             </div>

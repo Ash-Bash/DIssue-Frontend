@@ -11,17 +11,25 @@ export default class TableViewCell extends React.Component {
             <a id="linkArea" href="#">
                 <div id="cellSplitView" className="splitView">
                     <div id="cellLeftPanel" className="leftPanel sv-35">
-                        <div id="likesBadge" className="badge info">
-                            <h5 id="likesValueText" className="valueText">0</h5>
-                            <label className="titleLabel">Likes</label>
+                        <div id="topContentPanel">
+                            <div id="likesBadge" className="badge info">
+                                <h5 id="likesValueText" className="valueText">0</h5>
+                                <label className="titleLabel">Likes</label>
+                            </div>
+                            <div id="commentsBadge" className="badge info">
+                                <h5 id="commentsValueText" className="valueText">0</h5>
+                                <label className="titleLabel">Comments</label>
+                            </div>
+                            <div id="viewBadge" className="badge info">
+                                <h5 id="viewValueText" className="valueText">0</h5>
+                                <label className="titleLabel">Views</label>
+                            </div>
                         </div>
-                        <div id="commentsBadge" className="badge info">
-                            <h5 id="commentsValueText" className="valueText">0</h5>
-                            <label className="titleLabel">Comments</label>
-                        </div>
-                        <div id="viewBadge" className="badge info">
-                            <h5 id="viewValueText" className="valueText">0</h5>
-                            <label className="titleLabel">Views</label>
+                        <div id="bottomContentPanel">
+                            <div id="viewBadge" className="badge info">
+                                <h5 id="viewValueText" className="valueText">$0.00</h5>
+                                <label className="titleLabel">Proceeds</label>
+                            </div>
                         </div>
                     </div>
                     <div id="cellRightPanel" className="rightPanel sv-65">

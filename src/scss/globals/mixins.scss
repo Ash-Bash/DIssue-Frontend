@@ -10,4 +10,11 @@
     }
   }
 
- // @include font('D-DIN', "~/assets/font/D-DIN");
+ @include font('D-DIN', "../../assets/font/D-DIN");
+ @include font('D-DIN-Bold', "../../assets/font/D-DIN-Bold");
+ @include font('D-DIN-Itallic', "../../assets/font/D-DIN-Italic");
+ @include font('D-DIN-Condensed', "../../assets/font/D-DINCondensed");
+ @include font('D-DIN-CondensedBold', "../../assets/font/D-DINCondensed-Bold");
+ @include font('D-DIN-Exp', "../../assets/font/D-DINExp");
+ @include font('D-DIN-ExpBold', "../../assets/font/D-DINExp-Bold");
+ @include font('D-DIN-ExpBold', "../../assets/font/D-DINExp-Italic");

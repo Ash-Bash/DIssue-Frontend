@@ -10,13 +10,13 @@ export default class TrendingPage extends React.Component {
         return <div id="trendingPage" className="page">
             <div id="contentWrapper">
                 <div id="trendingTopBar">
-                    <h1>Trending Page</h1>
+                    <h1 id="trendingPageTitle" className="title p-title">Trending Page</h1>
                 </div>
                 <div id="trendingSplitView" className="splitView">
-                    <div id="trendingLeftPanel" className="leftPanel sv-65">
+                    <div id="trendingLeftPanel" className="leftPanel sv-70">
                         <TableView />
                     </div>
-                    <div id="trendingRightPanel" className="rightPanel sv-35">
+                    <div id="trendingRightPanel" className="rightPanel sv-30">
                         <div id="tagList" className="container c-sidebarTag">
                             <label id="tagContainerLabel">Tags</label>
                             <TagItem title="Test tag" />

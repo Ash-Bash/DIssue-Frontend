@@ -14,7 +14,7 @@ body, #app, #mainDiv {
 }
 
 body {
-    font-family: Arial;
+    font-family: D-DIN, Arial;
 }
 
 div, footer, nav {
@@ -115,4 +115,14 @@ ul {
     &:hover {
         background-color: darkorange;
     }
+}
+
+.vis-show {
+    &ul.inline-list li {
+        display: inline;
+    }
+}
+
+.vis-hide {
+    display: none;
 }

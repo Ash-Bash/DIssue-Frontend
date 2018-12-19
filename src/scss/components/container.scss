@@ -1,6 +1,11 @@
 .container {
     &.date-User {
         float: right;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        margin-right: 5px;
+        margin-bottom: 5px;
 
         .date-label, .user-link {
             font-size: 10px;

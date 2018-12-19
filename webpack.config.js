@@ -40,13 +40,14 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+                    'resolve-url-loader',
                     { loader: 'sass-loader', options: { sourceMap: true } },
                 ],
-            }/*,
+            },
             { 
-                test: /.(png|woff(2)?|eot|ttf|svg)(?[a-z0-9=.]+)?$/,
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000' 
-            }*/
+            }
         ]
     },
     plugins: [htmlPlugin, miniCssPlugin, copyFilesPlugin],
